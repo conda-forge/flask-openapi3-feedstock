@@ -1,11 +1,11 @@
-About flask-openapi3
-====================
+About flask-openapi3-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-openapi3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/luolingchun/flask-openapi3
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-openapi3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generate REST API and OpenAPI documentation for your Flask project.
 
