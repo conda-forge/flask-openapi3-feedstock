@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - Flask >=2.0
+    - Flask >=2.0,<3.0.0
     - pydantic >=1.2,<2.0.0
 
 test:
