@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_openapi3-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flask_openapi3-{{ version }}.tar.gz
   sha256: e7932284263083eeb1f35c6657f6a4d1bb98be76f18f0509bd230e67f9854467
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - Flask >=2.0
     - pydantic >=2.0
 
@@ -29,6 +29,7 @@ test:
     - flask_openapi3
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
