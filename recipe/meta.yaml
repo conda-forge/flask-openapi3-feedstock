@@ -1,5 +1,5 @@
 {% set name = "flask-openapi3" %}
-{% set version = "4.3.0" %}
+{% set version = "4.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flask_openapi3-{{ version }}.tar.gz
-  sha256: 63497b8395f0aaa06a7b89369630a4e70fd52d8a4a0547898f09f939d5927dfb
+  sha256: 9a2d1173cfd7f7a3d60b091024f2c61d6bb85707791a249e80b628ab47530885
 
 build:
   noarch: python
